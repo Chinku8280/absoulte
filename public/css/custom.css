@@ -1,0 +1,24 @@
+.left-sidebar {
+    width:205px;
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        width: 205px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page-wrapper {
+        margin-left: 215px;
+    }
+    
+}
+
+.sidebar-nav ul li ul li a {
+    padding: 7px 20px 7px 5px;
+}
+
+.settings .navbar-header {
+    width: 205px;
+}

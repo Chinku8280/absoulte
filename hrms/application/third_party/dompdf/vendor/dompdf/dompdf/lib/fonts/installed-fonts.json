@@ -1,0 +1,13 @@
+{
+    "libre baskerville": {
+        "normal": "libre_baskerville_normal_81892df49bc63aa1e1aaec1d3b205b42"
+    },
+    "comic neue": {
+        "300_italic": "E:\\xampp\\htdocs\\css\\css_hrms\\application\\third_party\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/comic_neue_300_italic_d62e0cf7482b2585a9cc6a763eb8fc30",
+        "italic": "E:\\xampp\\htdocs\\css\\css_hrms\\application\\third_party\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/comic_neue_italic_b99ce4c22f0d7285ea54221181da61f0",
+        "bold_italic": "E:\\xampp\\htdocs\\css\\css_hrms\\application\\third_party\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/comic_neue_bold_italic_15b4d614ca908901c3edd2fc67f8897a",
+        "300": "E:\\xampp\\htdocs\\css\\css_hrms\\application\\third_party\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/comic_neue_300_665a1d1c1b9bc811199fbf6d58796f13",
+        "normal": "comic_neue_normal_0326f387cbb9689a8307264148ed6c4d",
+        "bold": "E:\\xampp\\htdocs\\css\\css_hrms\\application\\third_party\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/comic_neue_bold_f9f3a50a346aad5935706c8286d9173a"
+    }
+}

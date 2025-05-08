@@ -1,0 +1,2282 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Absolute</title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.min.css" rel="stylesheet"/>
+    <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet"/>
+    <link href="./dist/css/demo.min.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+
+        :root {
+            --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+        }
+
+        body {
+            font-feature-settings: "cv03", "cv04", "cv11";
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./dist/js/demo-theme.min.js?1674944402"></script>
+    <div class="page">
+        <!-- Sidebar -->
+        <aside class="navbar navbar-vertical navbar-expand-lg navbar-transparent">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu"
+                    aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1 class="navbar-brand navbar-brand-autodark">
+                    <a href=".">
+                        <img src="dist/img/logo.png" width="110" height="32" alt="Absolute"" class="navbar-brand-image">
+                    </a>
+                </h1>
+                <div class="navbar-nav flex-row d-lg-none">
+                    <div class="nav-item d-none d-lg-flex me-3">
+                        <div class="btn-list">
+                            <a href="https://github.com/tabler/tabler" class="btn" target="_blank" rel="noreferrer">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                </svg>
+                                Source code
+                            </a>
+                            <a href="https://github.com/sponsors/codecalm" class="btn" target="_blank" rel="noreferrer">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                </svg>
+                                Sponsor
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-flex">
+                        <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+                            </svg>
+                        </a>
+                        <a href="?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                <path
+                                    d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+                            </svg>
+                        </a>
+                        <div class="nav-item dropdown d-none d-md-flex me-3">
+                            <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1"
+                                aria-label="Show notifications">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                </svg>
+                                <span class="badge bg-red"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Last updates</h3>
+                                    </div>
+                                    <div class="list-group list-group-flush list-group-hoverable">
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span
+                                                        class="status-dot status-dot-animated bg-red d-block"></span>
+                                                </div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 1</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        Change deprecated html tags to text decoration classes (#29604)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 2</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        justify-content:between ⇒ justify-content:space-between (#29734)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions show">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-yellow"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 3</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        Update change-version.js (#29736)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span
+                                                        class="status-dot status-dot-animated bg-green d-block"></span>
+                                                </div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 4</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        Regenerate package-lock.json (#29730)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
+                            aria-label="Open user menu">
+                            <span class="avatar avatar-sm"
+                                style="background-image: url(./static/avatars/000m.jpg)"></span>
+                            <div class="d-none d-xl-block ps-2">
+                                <div>Paweł Kuna</div>
+                                <div class="mt-1 small text-muted">UI Designer</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                            <a href="#" class="dropdown-item">Status</a>
+                            <a href="./profile.html" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Feedback</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./settings.html" class="dropdown-item">Settings</a>
+                            <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="sidebar-menu">
+                    <ul class="navbar-nav pt-lg-3">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                            </span>
+                            <span class="nav-link-title">
+                              Home
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="crm.html" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                             </svg>
+                            </span>
+                            <span class="nav-link-title">
+                              CRM
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="leads.html" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                                <path d="M16 19h6"></path>
+                                <path d="M19 16v6"></path>
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+                             </svg>
+                            </span>
+                            <span class="nav-link-title">
+                              Leads
+                            </span>
+                          </a>
+                        </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="./" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calculator" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 3m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M8 7m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"></path>
+                                <path d="M8 14l0 .01"></path>
+                                <path d="M12 14l0 .01"></path>
+                                <path d="M16 14l0 .01"></path>
+                                <path d="M8 17l0 .01"></path>
+                                <path d="M12 17l0 .01"></path>
+                                <path d="M16 17l0 .01"></path>
+                             </svg>
+                            </span>
+                            <span class="nav-link-title">
+                              Finance
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-horizontal" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                <path d="M4 6l8 0"></path>
+                                <path d="M16 6l4 0"></path>
+                                <path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                <path d="M4 12l2 0"></path>
+                                <path d="M10 12l10 0"></path>
+                                <path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                <path d="M4 18l11 0"></path>
+                                <path d="M19 18l1 0"></path>
+                             </svg>
+                            </span>
+                            <span class="nav-link-title">
+                              Service Managment
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6"></path>
+                                <path d="M16 3v4"></path>
+                                <path d="M8 3v4"></path>
+                                <path d="M4 11h16"></path>
+                                <path d="M15 19l2 2l4 -4"></path>
+                             </svg>
+                            </span>
+                            <span class="nav-link-title">
+                              Schedule
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 4h6v8h-6z"></path>
+                                <path d="M4 16h6v4h-6z"></path>
+                                <path d="M14 12h6v8h-6z"></path>
+                                <path d="M14 4h6v4h-6z"></path>
+                             </svg>
+                            </span>
+                            <span class="nav-link-title">
+                              HRMS
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy -->
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M11.5 21h-4.5a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v.5"></path>
+                                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+                                <path d="M15 19l2 2l4 -4"></path>
+                             </svg>
+                            </span>
+                            <span class="nav-link-title">
+                              Authentication
+                            </span>
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Authentication/sign-in.html">
+                              Sign in
+                            </a>
+                            <a class="dropdown-item" href="Authentication/sign-up.html">
+                              Sign up
+                            </a>
+                            <a class="dropdown-item" href="Authentication/forgot-password.html" target="_blank" rel="noopener">
+                              Forgot password
+                            </a>
+                           
+                          </div>
+                        </li>
+                     
+                      </ul>
+                </div>
+            </div>
+        </aside>
+        <header class="navbar navbar-expand-md navbar-transperent d-none d-lg-flex d-print-none">
+            <div class="container-xl">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+                    aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-nav flex-row order-md-last">
+                    <div class="d-none d-md-flex">
+                        <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" aria-label="Enable dark mode"
+                            data-bs-original-title="Enable dark mode">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="?theme=light" class="nav-link px-0 hide-theme-light" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" aria-label="Enable light mode"
+                            data-bs-original-title="Enable light mode">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                <path
+                                    d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="nav-item dropdown d-none d-md-flex me-3">
+                            <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1"
+                                aria-label="Show notifications">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6">
+                                    </path>
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+                                </svg>
+                                <span class="badge bg-red"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Last updates</h3>
+                                    </div>
+                                    <div class="list-group list-group-flush list-group-hoverable">
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span
+                                                        class="status-dot status-dot-animated bg-red d-block"></span>
+                                                </div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 1</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        Change deprecated html tags to text decoration classes (#29604)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 2</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        justify-content:between ⇒ justify-content:space-between (#29734)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions show">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-yellow"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 3</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        Update change-version.js (#29736)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span
+                                                        class="status-dot status-dot-animated bg-green d-block"></span>
+                                                </div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 4</a>
+                                                    <div class="d-block text-muted text-truncate mt-n1">
+                                                        Regenerate package-lock.json (#29730)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted"
+                                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
+                            aria-label="Open user menu">
+                            <span class="avatar avatar-sm"
+                                style="background-image: url(./static/avatars/000m.jpg)"></span>
+                            <div class="d-none d-xl-block ps-2">
+                                <div>Paweł Kuna</div>
+                                <div class="mt-1 small text-muted">UI Designer</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                            <a href="#" class="dropdown-item">Status</a>
+                            <a href="./profile.html" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Feedback</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./settings.html" class="dropdown-item">Settings</a>
+                            <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <h2 class="page-title">
+                        CRM
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <div class="page-wrapper">
+            <!-- Page header -->
+            <div class="page-header d-print-none">
+                <div class="container-xl">
+                    <div class="row g-2 align-items-center">
+                        <div class="col">
+                            <!-- Page pre-title -->
+
+                            <ul class="nav nav-pills nav-pills-primary" data-bs-toggle="tabs" role="tablist">
+                                <li class="nav-item me-2" role="presentation">
+                                    <a href="#residential" class="nav-link active" data-bs-toggle="tab"
+                                        aria-selected="true" role="tab">Residential</a>
+                                </li>
+                                <li class="nav-item me-2" role="presentation">
+                                    <a href="#commercial" class="nav-link" data-bs-toggle="tab" aria-selected="false"
+                                        role="tab" tabindex="-1">Commercial</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <!-- Page title actions -->
+                        <div class="col-auto ms-auto d-print-none">
+                            <div class="btn-list">
+
+                                <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal"
+                                    data-bs-target="#add-customer">
+                                    <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12 5l0 14" />
+                                        <path d="M5 12l14 0" />
+                                    </svg>
+                                    Add New
+                                </a>
+                                <!-- <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal"
+                                    data-bs-target="#modal-report" aria-label="Create new report">
+                                   
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12 5l0 14" />
+                                        <path d="M5 12l14 0" />
+                                    </svg>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page body -->
+            <div class="page-body">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="residential" role="tabpanel">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="text-muted">
+                                                Show
+                                                <div class="mx-2 d-inline-block">
+                                                    <input type="text" class="form-control form-control-sm" value="8"
+                                                        size="3" aria-label="Invoices count">
+                                                </div>
+                                                entries
+                                            </div>
+                                            <div class="ms-auto text-muted">
+                                                Search:
+                                                <div class="ms-2 d-inline-block">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        aria-label="Search invoice">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table card-table table-vcenter text-center text-nowrap datatable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-1">No.</th>
+                                                            <th>Status</th>
+                                                            <th>Customer ID</th>
+                                                            <th>Customer name</th>
+                                                            <th>Contact Number</th>
+                                                            <th>Contact Address</th>
+                                                            <th>Outstanding Amount</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+
+                                                        <tr>
+                                                            <td><span class="text-muted">1</span></td>
+                                                            <td><span class="badge bg-red">Pending</span></td>
+                                                            <td>
+                                                                <a href="#" class="text-reset" tabindex="-1"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#view-customer">ABC0001</a>
+                                                            </td>
+
+                                                            <td>ABC Pvt. Lte.</td>
+                                                            <td>+91 9758697820</td>
+                                                            <td>Ahmedabad</td>
+                                                            <td>$2000</td>
+
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer d-flex align-items-center">
+                                            <p class="m-0 text-muted">Showing <span>1</span> to <span>1</span> of
+                                                <span>1</span> entries
+                                            </p>
+                                            <ul class="pagination m-0 ms-auto">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="commercial" role="tabpanel">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="text-muted">
+                                                Show
+                                                <div class="mx-2 d-inline-block">
+                                                    <input type="text" class="form-control form-control-sm" value="8"
+                                                        size="3" aria-label="Invoices count">
+                                                </div>
+                                                entries
+                                            </div>
+                                            <div class="ms-auto text-muted">
+                                                Search:
+                                                <div class="ms-2 d-inline-block">
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        aria-label="Search invoice">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table card-table table-vcenter text-center text-nowrap datatable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-1">No.</th>
+                                                            <th>Status</th>
+                                                            <th>Customer ID</th>
+                                                            <th>Customer name</th>
+                                                            <th>Contact Number</th>
+                                                            <th>Contact Address</th>
+                                                            <th>Outstanding Amount</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+
+                                                        <tr>
+                                                            <td><span class="text-muted">1</span></td>
+                                                            <td><span class="badge bg-red">Pending</span></td>
+                                                            <td>
+                                                                <a href="#" class="text-reset"
+                                                                    tabindex="-1">ABC0002</a>
+                                                            </td>
+
+                                                            <td>efg Pvt. Lte.</td>
+                                                            <td>+91 9758697820</td>
+                                                            <td>Ahmedabad</td>
+                                                            <td>$2500</td>
+
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer d-flex align-items-center">
+                                            <p class="m-0 text-muted">Showing <span>1</span> to <span>1</span> of
+                                                <span>1</span> entries
+                                            </p>
+                                            <ul class="pagination m-0 ms-auto">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer footer-transparent d-print-none">
+
+            </footer>
+        </div>
+    </div>
+    <div class="modal modal-blur fade" id="add-customer" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document" style="max-width: 800px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Customer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Select Customer Type</label>
+                        <select class="form-select" id="myselection">
+                            <option selected="">Select Option</option>
+                            <option value="One">Residential</option>
+                            <option value="Two">Commercial</option>
+                        </select>
+
+                    </div>
+                    <div id="showOne" class="row myDiv" style="display: none;">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Person Incharge Name </label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Nickname</label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Mobile Number</label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Fax Number</label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-1" class="nav-link active" data-bs-toggle="tab"
+                                                    aria-selected="true" role="tab">Additional Contact
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-2" class="nav-link" data-bs-toggle="tab"
+                                                    aria-selected="false" tabindex="-1" role="tab">Additional Info</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-3" class="nav-link" data-bs-toggle="tab"
+                                                    aria-selected="false" tabindex="-1" role="tab">Delivery Address</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-4" class="nav-link" data-bs-toggle="tab"
+                                                    aria-selected="false" tabindex="-1" role="tab">Billing Address </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane active show" id="tabs-1" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5 col-sm-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Person Incharge Name </label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Mobile Number</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <label class="form-label"
+                                                            style="visibility: hidden;">Add</label>
+                                                        <a href="#" class="btn btn-primary">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon m-0"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                </path>
+                                                                <path d="M12 5l0 14"></path>
+                                                                <path d="M5 12l14 0"></path>
+                                                            </svg>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Credit limit</label>
+                                                                    <input type="number" class="form-control"
+                                                                        name="example-text-input" placeholder="0">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Payment Terms</label>
+                                                                    <select class="form-select">
+                                                                        <option value="1" selected="">Private</option>
+                                                                        <option value="2">6 Month</option>
+                                                                        <option value="3">12 Month</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 text-end">
+                                                                <a href="#" class="btn btn-primary ms-auto"
+                                                                    data-bs-dismiss="modal">
+                                                                    Save
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Remark</label>
+                                                                    <input type="number" class="form-control"
+                                                                        name="example-text-input"
+                                                                        placeholder="Enter Remarks">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Status</label>
+                                                                    <select class="form-select">
+                                                                        <option value="1" selected="">Private</option>
+                                                                        <option value="2">Green</option>
+                                                                        <option value="3">Red</option>
+                                                                        <option value="4">orange</option>
+                                                                        <option value="4">Black</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 text-end">
+                                                                <a href="#" class="btn btn-primary ms-auto"
+                                                                    data-bs-dismiss="modal">
+                                                                    Save
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                                <div class="row" id="div" style="display: none;">
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">City</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter City">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mt-3" style="justify-content: space-between;">
+                                                    <div class="m-1">
+
+                                                        <a href="#" class="btn btn-primary" onClick="addBtn()">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon m-0"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                </path>
+                                                                <path d="M12 5l0 14"></path>
+                                                                <path d="M5 12l14 0"></path>
+                                                            </svg>
+
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="1" id="1" name="radios-inline"
+                                                                            checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                                <div class="row" id="div2" style="display: none;">
+                                                    <div class="col-lg-12">
+                                                        <label class="form-check-label">
+                                                            <input type="checkbox" class="form-check-input">
+                                                            Same as delivery address
+                                                            <i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">City</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter City">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mt-3" style="justify-content: space-between;">
+                                                    <div class="m-1">
+
+                                                        <a href="#" class="btn btn-primary" onClick="addBtn2()">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon m-0"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                </path>
+                                                                <path d="M12 5l0 14"></path>
+                                                                <path d="M5 12l14 0"></path>
+                                                            </svg>
+
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="1" id="1" name="radios-inline"
+                                                                            checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="showTwo" class="myDiv" style="display: none;">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">UEN <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Id Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Group Company Name</label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Individual Company Name</label>
+                                    <input type="text" class="form-control" name="example-text-input"
+                                        placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Branch</label>
+                                    <select class="form-select">
+                                        <option selected="">1</option>
+                                        <option value="One">2</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label" style="visibility: hidden;">Add</label>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#add-branch">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon m-0" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M12 5l0 14"></path>
+                                            <path d="M5 12l14 0"></path>
+                                        </svg>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-00" class="nav-link active" data-bs-toggle="tab"
+                                                    aria-selected="true" role="tab">Company Info
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-01" class="nav-link" data-bs-toggle="tab"
+                                                    aria-selected="true" role="tab">Additional Contact
+                                                </a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-02" class="nav-link" data-bs-toggle="tab"
+                                                    aria-selected="false" tabindex="-1" role="tab">Additional Info</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-03" class="nav-link" data-bs-toggle="tab"
+                                                    aria-selected="false" tabindex="-1" role="tab">Delivery Address</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a href="#tabs-04" class="nav-link" data-bs-toggle="tab"
+                                                    aria-selected="false" tabindex="-1" role="tab">Billing Address </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane active show" id="tabs-00" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-sm-1">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Person Incharge Name </label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-1">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Mobile Number</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-1">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Fax Number</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-1">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Email</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tabs-01" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-lg-5 col-md-5 col-sm-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Person Incharge Name </label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Mobile Number</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <label class="form-label"
+                                                            style="visibility: hidden;">Add</label>
+                                                        <a href="#" class="btn btn-primary">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon m-0"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                </path>
+                                                                <path d="M12 5l0 14"></path>
+                                                                <path d="M5 12l14 0"></path>
+                                                            </svg>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tabs-02" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Credit limit</label>
+                                                                    <input type="number" class="form-control"
+                                                                        name="example-text-input" placeholder="0">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Payment Terms</label>
+                                                                    <select class="form-select">
+                                                                        <option value="1" selected="">Private</option>
+                                                                        <option value="2">6 Month</option>
+                                                                        <option value="3">12 Month</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 text-end">
+                                                                <a href="#" class="btn btn-primary ms-auto"
+                                                                    data-bs-dismiss="modal">
+                                                                    Save
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Remark</label>
+                                                                    <input type="number" class="form-control"
+                                                                        name="example-text-input"
+                                                                        placeholder="Enter Remarks">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Status</label>
+                                                                    <select class="form-select">
+                                                                        <option value="1" selected="">Private</option>
+                                                                        <option value="2">Green</option>
+                                                                        <option value="3">Red</option>
+                                                                        <option value="4">orange</option>
+                                                                        <option value="4">Black</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 text-end">
+                                                                <a href="#" class="btn btn-primary ms-auto"
+                                                                    data-bs-dismiss="modal">
+                                                                    Save
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tabs-03" role="tabpanel">
+                                                <div class="row" id="div3" style="display: none;">
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">City</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter City">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mt-3" style="justify-content: space-between;">
+                                                    <div class="m-1">
+
+                                                        <a href="#" class="btn btn-primary" onClick="addBtn3()">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon m-0"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                </path>
+                                                                <path d="M12 5l0 14"></path>
+                                                                <path d="M5 12l14 0"></path>
+                                                            </svg>
+
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="1" id="1" name="radios-inline"
+                                                                            checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tabs-04" role="tabpanel">
+                                                <div class="row" id="div4" style="display: none;">
+                                                    <div class="col-lg-12">
+                                                        <label class="form-check-label">
+                                                            <input type="checkbox" class="form-check-input">
+                                                            Same as delivery address
+                                                            <i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Postal Code</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">City</label>
+                                                            <input type="text" class="form-control"
+                                                                name="example-text-input" placeholder="Enter City">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex mt-3" style="justify-content: space-between;">
+                                                    <div class="m-1">
+
+                                                        <a href="#" class="btn btn-primary" onClick="addBtn4()">
+                                                            <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon m-0"
+                                                                width="24" height="24" viewBox="0 0 24 24"
+                                                                stroke-width="2" stroke="currentColor" fill="none"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                </path>
+                                                                <path d="M12 5l0 14"></path>
+                                                                <path d="M5 12l14 0"></path>
+                                                            </svg>
+
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="1" id="1" name="radios-inline"
+                                                                            checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-1 text-start m-0">
+                                                        <div class="card card-link card-link-pop">
+                                                            <div class="card-body">
+                                                                <h5>Sky Enterprice</h5>
+                                                                <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                                </p>
+                                                                <div class="form-group mt-3 m-0">
+                                                                    <label class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="radios-inline" checked="">
+                                                                        <span class="form-check-label">Default
+                                                                            Address</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-blur fade" id="view-customer" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full-width modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">View Customer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="card card-link card-link-pop">
+                                <div class="card-status-start bg-primary"></div>
+                                <div class="card-stamp">
+                                    <div class="card-stamp-icon bg-white text-primary">
+                                        <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title " style="color: #1F3BB3;"><b class="me-2">ABC Pvt.
+                                            Lte.</b><span class="badge bg-red">Pending</span>
+                                    </h3>
+
+                                    <p class="card-p d-flex align-items-center mb-2 ">
+                                        <i class="fa-solid fa-phone me-2" style="font-size: 14px;"></i>+91
+                                        9758697820
+                                    </p>
+                                    <p class="card-p  d-flex align-items-center mb-2">
+                                        <i class="fa-solid fa-envelope me-2" style="font-size: 14px;"></i>abc@pvtltd.com
+                                    </p>
+                                    <p class="card-p d-flex mb-2">
+                                        <i class="fa-solid fa-map-pin me-2 pt-1" style="font-size: 14px;"></i>103
+                                        Rasadhi
+                                        Appartment Wadaj Ahmedabad 380004.
+
+                                    </p>
+                                    <div class="d-flex mt-2">
+                                        <div class="me-4 card-p" style="color: green; cursor: pointer;"
+                                            data-bs-toggle="modal" data-bs-target="#edit-customer"
+                                            data-whatever="@getbootstrap">
+
+                                            <i class="fa-solid fa-pen-to-square me-2"></i>Edit
+                                        </div>
+
+                                        <div class="card-p" style="color: red; cursor: pointer; ">
+                                            <i class="fa-solid fa-trash-can me-2"></i>
+                                            Delete
+                                        </div>
+                                    </div>
+                                    <hr class="my-3">
+                                    <h3 class="card-title mb-1" style="color: #1F3BB3;">
+
+                                        <b>Details</b>
+                                    </h3>
+                                    <div class="amount">
+                                        <label for="" class="mb-0"> <b>Outstanding Amount</b> </label>
+                                        <p class="m-0 card-p">2000</p>
+                                    </div>
+                                    <div class="uen mt-2">
+                                        <label for="" class="mb-0"> <b>UEN</b> </label>
+                                        <p class="m-0 card-p">001212005</p>
+                                    </div>
+                                    <div class="person-incharge mt-2">
+                                        <label for="" class="mb-0"> <b>Person Incharge</b> </label>
+                                        <p class="m-0 card-p">Mr. Devang</p>
+                                    </div>
+                                    <div class="driver mt-2">
+                                        <label for="" class="mb-0"> <b>Driver</b> </label>
+                                        <p class="m-0 card-p">Dhaval</p>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="card">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs card-header-tabs nav-fill" data-bs-toggle="tabs"
+                                        role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a href="#vc-1" class="nav-link active" data-bs-toggle="tab"
+                                                aria-selected="true" role="tab">Past & Current
+                                                Quotation</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="#vc-2" class="nav-link" data-bs-toggle="tab" aria-selected="false"
+                                                role="tab" tabindex="-1">
+                                                Invoice</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="#vc-3" class="nav-link" data-bs-toggle="tab" aria-selected="false"
+                                                role="tab" tabindex="-1">Service Order</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="#vc-4" class="nav-link" data-bs-toggle="tab" aria-selected="false"
+                                                role="tab" tabindex="-1">Service Address</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="#vc-5" class="nav-link" data-bs-toggle="tab" aria-selected="false"
+                                                role="tab" tabindex="-1">Billing Address</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="#vc-6" class="nav-link" data-bs-toggle="tab" aria-selected="false"
+                                                role="tab" tabindex="-1">Statement Of Accounts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active show" id="vc-1" role="tabpanel">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table card-table table-vcenter text-center text-nowrap table-transparent">
+                                                    <thead class="">
+                                                        <tr>
+                                                            <th class="w-1">Sl No.</th>
+                                                            <th>Quotation No.</th>
+                                                            <th>Item Name</th>
+                                                            <th>Date</th>
+                                                            <th>Amount</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>12345</td>
+                                                            <td>Test</td>
+                                                            <td>20-12-2022</td>
+                                                            <td>2000</td>
+                                                            <td>
+                                                                <span class="badge bg-red">Pending</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="vc-2" role="tabpanel">
+                                            <div class="card card-active">
+                                                <div class="ribbon bg-red">NEW</div>
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <div class="my-auto">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">test-1</label>
+                                                        <p class="m-0">$ 2000</p>
+                                                    </div>
+                                                    <div class="my-auto" style="width: 15%;">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">22 May 2022</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mt-3 card-active">
+                                                <div class="ribbon bg-red">NEW</div>
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <div class="my-auto">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">test-1</label>
+                                                        <p class="m-0">$ 2000</p>
+                                                    </div>
+                                                    <div class="my-auto" style="width: 15%;">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">22 May 2022</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="vc-3" role="tabpanel">
+                                            <div class="card card-active">
+                                                <div class="ribbon ribbon-top bg-yellow">
+                                                    <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                        height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path
+                                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <div class="my-auto">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">test-1</label>
+                                                        <p class="m-0">$ 2000</p>
+                                                    </div>
+                                                    <div class="my-auto" style="width: 15%;">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">22 May 2022</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mt-3 card-active">
+                                                <div class="ribbon ribbon-top bg-yellow">
+                                                    <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                        height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path
+                                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <div class="my-auto">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">test-1</label>
+                                                        <p class="m-0">$ 2000</p>
+                                                    </div>
+                                                    <div class="my-auto" style="width: 15%;">
+                                                        <label class="mb-0 text-black fw-bold "
+                                                            style="font-size: 14px">22 May 2022</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="vc-4" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="card card-link card-link-pop">
+                                                        <div class="card-body">
+                                                            <h5>Sky Enterprice</h5>
+                                                            <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                            </p>
+                                                            <div class="form-group mt-3 m-0">
+                                                                <label class="form-check form-check-inline">
+
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="11" id="11" checked="">
+                                                                    <span class="form-check-label">Default
+                                                                        Address</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="vc-5" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div class="card card-link card-link-pop">
+                                                        <div class="card-body">
+                                                            <h5>Sky Enterprice</h5>
+                                                            <p>8 Shopping Centre, 9 Bishan Place, Singapore 579837
+                                                            </p>
+                                                            <div class="form-group mt-3 m-0">
+                                                                <label class="form-check form-check-inline">
+
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="1" id="1" checked="">
+                                                                    <span class="form-check-label">Default
+                                                                        Address</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="vc-6" role="tabpanel">
+                                            <ul class="nav nav-pills nav-pills-primary" data-bs-toggle="tabs"
+                                                role="tablist">
+                                                <li class="nav-item me-2" role="presentation">
+                                                    <a href="#standard-soh" class="nav-link active" data-bs-toggle="tab"
+                                                        aria-selected="true" role="tab">Residential</a>
+                                                </li>
+                                                <li class="nav-item me-2" role="presentation">
+                                                    <a href="#debit-soh" class="nav-link" data-bs-toggle="tab"
+                                                        aria-selected="false" role="tab" tabindex="-1">Commercial</a>
+                                                </li>
+
+
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active show" id="standard-soh" role="tabpanel">
+                                                    <div class="row mt-3">
+                                                        <div class="col-lg-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Search By</label>
+                                                                <select class="form-select">
+                                                                    <option selected="">Select Option</option>
+                                                                    <option value="One">1</option>
+                                                                    <option value="Two">2</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-12">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Start Date</label>
+                                                                <div class="input-icon mb-2">
+                                                                    <input class="form-control "
+                                                                        placeholder="Select a date" id="datepicker-icon"
+                                                                        value="2020-06-20">
+                                                                    <span
+                                                                        class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            class="icon" width="24" height="24"
+                                                                            viewBox="0 0 24 24" stroke-width="2"
+                                                                            stroke="currentColor" fill="none"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round">
+                                                                            <path stroke="none" d="M0 0h24v24H0z"
+                                                                                fill="none"></path>
+                                                                            <path
+                                                                                d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
+                                                                            </path>
+                                                                            <path d="M16 3l0 4"></path>
+                                                                            <path d="M8 3l0 4"></path>
+                                                                            <path d="M4 11l16 0"></path>
+                                                                            <path d="M11 15l1 0"></path>
+                                                                            <path d="M12 15l0 3"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-12">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">End Date</label>
+                                                                <div class="input-icon mb-2">
+                                                                    <input class="form-control "
+                                                                        placeholder="Select a date" id="datepicker-icon"
+                                                                        value="2020-06-20">
+                                                                    <span
+                                                                        class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            class="icon" width="24" height="24"
+                                                                            viewBox="0 0 24 24" stroke-width="2"
+                                                                            stroke="currentColor" fill="none"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round">
+                                                                            <path stroke="none" d="M0 0h24v24H0z"
+                                                                                fill="none"></path>
+                                                                            <path
+                                                                                d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
+                                                                            </path>
+                                                                            <path d="M16 3l0 4"></path>
+                                                                            <path d="M8 3l0 4"></path>
+                                                                            <path d="M4 11l16 0"></path>
+                                                                            <path d="M11 15l1 0"></path>
+                                                                            <path d="M12 15l0 3"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                                            <label class="form-label" style="visibility: hidden;">Save</label>
+                                                            <a href="#" class="btn btn-primary ms-auto">
+
+                                                                Save
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="debit-soh" role="tabpanel">
+                                                    <div class="row mt-3">
+                                                        <div class="col-lg-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Search By</label>
+                                                                <select class="form-select">
+                                                                    <option selected="">Select Option</option>
+                                                                    <option value="One">1</option>
+                                                                    <option value="Two">2</option>
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-12">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Start Date</label>
+                                                                <div class="input-icon mb-2">
+                                                                    <input class="form-control "
+                                                                        placeholder="Select a date" id="datepicker-icon"
+                                                                        value="2020-06-20">
+                                                                    <span
+                                                                        class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            class="icon" width="24" height="24"
+                                                                            viewBox="0 0 24 24" stroke-width="2"
+                                                                            stroke="currentColor" fill="none"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round">
+                                                                            <path stroke="none" d="M0 0h24v24H0z"
+                                                                                fill="none"></path>
+                                                                            <path
+                                                                                d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
+                                                                            </path>
+                                                                            <path d="M16 3l0 4"></path>
+                                                                            <path d="M8 3l0 4"></path>
+                                                                            <path d="M4 11l16 0"></path>
+                                                                            <path d="M11 15l1 0"></path>
+                                                                            <path d="M12 15l0 3"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-12">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">End Date</label>
+                                                                <div class="input-icon mb-2">
+                                                                    <input class="form-control "
+                                                                        placeholder="Select a date" id="datepicker-icon"
+                                                                        value="2020-06-20">
+                                                                    <span
+                                                                        class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            class="icon" width="24" height="24"
+                                                                            viewBox="0 0 24 24" stroke-width="2"
+                                                                            stroke="currentColor" fill="none"
+                                                                            stroke-linecap="round"
+                                                                            stroke-linejoin="round">
+                                                                            <path stroke="none" d="M0 0h24v24H0z"
+                                                                                fill="none"></path>
+                                                                            <path
+                                                                                d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
+                                                                            </path>
+                                                                            <path d="M16 3l0 4"></path>
+                                                                            <path d="M8 3l0 4"></path>
+                                                                            <path d="M4 11l16 0"></path>
+                                                                            <path d="M11 15l1 0"></path>
+                                                                            <path d="M12 15l0 3"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                                            <label class="form-label" style="visibility: hidden;">Save</label>
+                                                            <a href="#" class="btn btn-primary ms-auto">
+
+                                                                Save
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-blur fade" id="add-branch" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Branch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">UEN <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Id Number">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Branch Name</label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Person Incharge Name </label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Nickname</label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Mobile Number</label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Number">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Fax Number</label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Number">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Address</label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Address">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" name="example-text-input"
+                                    placeholder="Enter Code">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-1">
+                            <div class="mb-3">
+                                <label class="form-label">Country</label>
+                                <select class="form-select">
+                                    <option selected="">India</option>
+                                    <option value="One">Singapore</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal">
+                        Cancel
+                    </a>
+                    <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
+
+                        Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+        function toggler(divId) {
+            $("#" + divId).toggle();
+        }
+
+        function addBtn() {
+            toggler('div');
+
+        }
+    </script>
+    <script>
+
+        function toggler(divId) {
+            $("#" + divId).toggle();
+        }
+
+        function addBtn2() {
+            toggler('div2');
+
+        }
+    </script>
+    <script>
+
+        function toggler(divId) {
+            $("#" + divId).toggle();
+        }
+
+        function addBtn3() {
+            toggler('div3');
+
+        }
+    </script>
+    <script>
+
+        function toggler(divId) {
+            $("#" + divId).toggle();
+        }
+
+        function addBtn4() {
+            toggler('div4');
+
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#myselection').on('change', function () {
+                var demovalue = $(this).val();
+                $("div.myDiv").hide();
+                $("#show" + demovalue).show();
+            });
+        });
+    </script>
+    <!-- Tabler Core -->
+    <script src="./dist/js/tabler.min.js" defer></script>
+    <script src="./dist/js/demo.min.js" defer></script>
+
+
+
+
+</body>
+
+</html>
