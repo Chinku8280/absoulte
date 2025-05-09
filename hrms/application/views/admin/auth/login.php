@@ -7,7 +7,10 @@
 $session = $this->session->userdata('username');
 if(!empty($session)){ 
 	redirect('admin/dashboard/');
-}
+}else {
+    $base_url = str_replace('/hrms', '', base_url());
+    redirect($base_url.'/', 'refresh');
+  }
 ?>
 <?php
 $session = $this->session->userdata('username');
